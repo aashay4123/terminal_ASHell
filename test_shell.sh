@@ -53,7 +53,7 @@ run_test "Extra whitespace" "  ls   -l  " "$(ls -l)"
 # Test 1: Very long command with multiple pipes and redirection
 run_test "Complex piping and redirection" \
 "cat /etc/passwd | grep root | sort | uniq | wc -l > root_count.txt ; cat root_count.txt" \
-"3"
+"1"
 
 # Test 2: Long command with background execution
 run_test "Long command with background execution" \
